@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Eines Html i Css",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Robert Artesona Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "latest",
+    "posthtml-include": "^2.0.1"
+  }
+}
