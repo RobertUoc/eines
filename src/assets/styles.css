@@ -1,10 +1,415 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
-  }
+/*Estils per a Ruta perfecta */
+:root {
+    --primary-color: #081226;
+    --accent-color: #FFD920;
+    --bg-dark-color: #1B2459; 
+    --secondary-color: #F2F2F2;
+}
 
-  body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-weight: 400;
+    color: var(--primary-color);
+    line-height: 1.5;
+    font-family: "Fira Sans", sans-serif; 
+}
+
+h1, h2, h3 {   
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary-color);
+}
+
+a:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style-type: square;
+}
+ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/****************************
+Contenidors del lloc
+*****************************/
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--bg-dark-color);
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;    
+    background-color: var(--bg-dark-color);
+    color: var(--secondary-color);
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    max-width: 1140px;
+}
+
+/****************************
+Menú de navegació del lloc
+*****************************/
+nav {
+    text-align: left;
+    color: var(--secondary-color);
+}
+nav ul {
+    padding-left: 0;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+nav ul li:first-child {
+    margin-left: 0;
+}
+nav ul li a {
+    color: inherit;
+    border: none;
+}
+nav ul li a:hover {
+    border: none;
+    color: var(--accent-color);
+}
+nav li.active {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/****************************
+Página d'inici
+*****************************/
+body.home {    
+    background-color: var(--bg-dark-color); 
+    background-image: url(../img/bg-home.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: var(--secondary-color);
+}
+
+.bg-container {
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: right top;
+    min-height: 300px;
+}
+
+body.home header {
+    background-color: transparent;
+    height: 10vh;
+}
+
+body.home main {
+    padding-top: 10vh;
+    height: 70vh;
+}
+
+body.home footer {
+    background-color: transparent;
+    height: 20vh;
+}
+
+body.home nav {
+    text-align: right;
+}
+
+body.home h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+body.home h1 span {
+    display: block;
+    font-weight: 200;
+}
+
+body.home nav ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+body.home nav ul li {
+    font-size: 1.3rem;
+}
+
+body.home main p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/*************************
+Continguts del footer
+**************************/
+footer {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+footer p {
+    font-size: inherit;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
