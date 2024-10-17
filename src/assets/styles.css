@@ -1,9 +1,8 @@
 /*Estils per a Ruta perfecta */
 :root {
-    --primary-color: #081226;
-    --accent-color: #FFD920;
-    --bg-dark-color: #1B2459; 
+    --primary-color: #081226;    
     --secondary-color: #F2F2F2;
+    --color-fons: hwb(236 15% 46% / 0.982);
 }
 
 * {
@@ -23,23 +22,13 @@ body {
     font-family: "Fira Sans", sans-serif; 
 }
 
-h1, h2, h3 {   
+h1 {   
     font-weight: 700;
 }
 
 p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--primary-color);
-}
-
-a:hover {
-    border-bottom: 1px solid var(--primary-color);
 }
 
 h1{
@@ -52,28 +41,19 @@ h1{
     font-weight:bold;
 }
 
-ul {
-    padding-left: 1rem;
-    list-style-type: square;
-}
-ul li {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
 /****************************
 Contenidors del lloc
 *****************************/
 header {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: var(--bg-dark-color);
+    background: var(--primary-color);
 }
 
 footer {
     padding-top: 1rem;
     padding-bottom: 1rem;    
-    background-color: var(--bg-dark-color);
+    background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
@@ -92,46 +72,15 @@ main {
 }
 
 /****************************
-Menú de navegació del lloc
-*****************************/
-nav {
-    text-align: left;
-    color: var(--secondary-color);
-}
-nav ul {
-    padding-left: 0;
-}
-nav ul li {
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-left: 2rem;
-}
-nav ul li:first-child {
-    margin-left: 0;
-}
-nav ul li a {
-    color: inherit;
-    border: none;
-}
-nav ul li a:hover {
-    border: none;
-    color: var(--accent-color);
-}
-nav li.active {
-    border-bottom: 3px solid var(--accent-color);
-}
-
-/****************************
 Página d'inici
 *****************************/
 body.home {    
-    background-color: var(--bg-dark-color); 
+    background-color: var(--primary-color); 
     background-image: url(../img/bg-home.jpg);   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .bg-container {
@@ -156,9 +105,6 @@ body.home footer {
     height: 20vh;
 }
 
-body.home nav {
-    text-align: right;
-}
 
 body.home h1 {
     font-size: 6rem;
@@ -171,245 +117,133 @@ body.home h1 span {
     font-weight: 200;
 }
 
-body.home nav ul {
-    padding-left: 0;
-    margin-left: 0;
-}
-
-body.home nav ul li {
-    font-size: 1.3rem;
-}
-
 body.home main p {
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-/*************************
-Continguts del footer
-**************************/
 footer {
     font-size: 0.8rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 footer p {
-    font-size: inherit;
-    margin-bottom: 0.5rem;
+        font-size: inherit;
+        margin-bottom: 0.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/****************************
+Menu
+*****************************/
+li, a {
+   text-decoration: none; 
+   list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu {
+    display: none;
+}
+
+.icono {    
+    background-color: transparent;
+    width: 25px;
+}
+
+header label {
+    display: none;
+    width: 20px;
+    height: 40px;
+    padding: 0px;
+    background-color: transparent;        
+}
+
+header label {
+    cursor: pointer;
+    background-color: transparent;     
+}
+.navbar ul {
+    margin : 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li:hover {
+    background-color: var(--color-fons);        
+    border-radius: 20px;
+}
+
+.navbar li a {
+   display: block; 
+   padding: 15px;
+   color: var(--primary-color);
+   font-weight: 700;
+}
+
+.navbar li a:hover {    
+    color: var(--secondary-color);    
+}
+
+@media(max-width:991px) {
+    header label {
+        display: block;        
+    }
+
+    .navbar {
+        position: absolute;
+        background-color: transparent; 
+        
+        margin-left: -100%;
+        padding: 5px;
+        transition: all 0.5s;                
+    }
+
+    .navbar li a {
+       color : var(--secondary-color);
+    }
+
+    .navbar li a:hover {
+        background-color: var(--color-fons);          
+        border-radius: 20px;
+    }
+
+    .navbar ul {        
+        flex-direction: column;
+    }
+
+    #menu:checked ~ .navbar {
+        margin: 0;
+    }
+}
+
+/****************************
+Resolucions
+*****************************/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+}
