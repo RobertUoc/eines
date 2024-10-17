@@ -12,33 +12,18 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 18px;
 }
 
-body {
-    font-weight: 400;
+body {    
     color: var(--primary-color);
     line-height: 1.5;
     font-family: "Fira Sans", sans-serif; 
 }
 
-h1 {   
-    font-weight: 700;
-}
-
 p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-}
-
-h1{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.home h1 {
-    font-size: 3rem;
-    font-weight:bold;
 }
 
 /****************************
@@ -102,24 +87,25 @@ body.home main {
 
 body.home footer {
     background-color: transparent;
-    height: 20vh;
+    height: 30vh;
 }
 
 
 body.home h1 {
-    font-size: 6rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     line-height: 1;
 }
 
 body.home h1 span {
     display: block;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 body.home main p {
     font-size: 1.3rem;
     font-weight: 400;
+    padding-left: 15px;
 }
 
 footer {
