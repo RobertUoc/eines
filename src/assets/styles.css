@@ -70,7 +70,7 @@ body.home {
     color: var(--primary-color);
     min-height: 100vh;
     margin:0;
-    padding:0;
+    padding:0
 }
 
 .bg-container {
@@ -141,9 +141,17 @@ li, a {
     display: none;
 }
 
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 .icono {    
     background-color: transparent;
-    width: 75px;
+    width: 100px;
 }
 
 header label {    
@@ -191,14 +199,20 @@ header label {
 }
 
 @media(max-width:991px) {
-    header label {
+    .icono {
+        margin-top: -100px;
+        margin-left: 8px;
+        position:absolute;
+        display:nones ;
+    }
+
+    header label {        
         display: block;        
     }
 
-    .navbar {
+    .navbar {        
         position: absolute;
-        background-color: var(--primary-color); 
-        
+        background-color: var(--primary-color);         
         margin-left: -100%;
         padding: 5px;
         transition: all 0.5s;                
@@ -213,7 +227,8 @@ header label {
         border-radius: 20px;
     }
 
-    .navbar ul {        
+    .navbar ul {     
+        margin-top:100px;   
         flex-direction: column;
     }
 

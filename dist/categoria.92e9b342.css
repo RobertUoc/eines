@@ -52,5 +52,9 @@
   .menu_categories {
     flex-direction: column;
   }
+
+  .boto_categories {
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=categoria.92e9b342.css.map */

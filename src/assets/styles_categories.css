@@ -56,7 +56,11 @@ Resolucions
   
 @media (max-width: 1000px) {
     .menu_categories {
-        flex-direction: column;
+        flex-direction: column;        
+    }
+
+    .boto_categories {
+        margin-top : 10px;
     }
 }
   

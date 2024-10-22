@@ -129,9 +129,17 @@ li, a {
   display: none;
 }
 
+.navbar {
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
 .icono {
   background-color: #0000;
-  width: 75px;
+  width: 100px;
 }
 
 header label {
@@ -179,6 +187,13 @@ header label {
 }
 
 @media (width <= 991px) {
+  .icono {
+    display: nones;
+    margin-top: -100px;
+    margin-left: 8px;
+    position: absolute;
+  }
+
   header label {
     display: block;
   }
@@ -202,6 +217,7 @@ header label {
 
   .navbar ul {
     flex-direction: column;
+    margin-top: 100px;
   }
 
   #menu:checked ~ .navbar {
