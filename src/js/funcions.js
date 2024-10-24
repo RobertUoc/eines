@@ -1,10 +1,10 @@
+const links = document.querySelectorAll('a');
 
-
-function ver_funcio(boton) {    
-    matriu.map(ciutat => {
-        document.getElementById(ciutat).classList.add('d-none')
-    });        
-    document.getElementById(boton).classList.remove('d-none');    
-}
-
-export {ver_funcio}
+links.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();         
+        setTimeout(() => {
+            window.location = this.href; 
+        }, 500); 
+    });
+});
