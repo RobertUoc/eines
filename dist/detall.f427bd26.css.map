@@ -1,1 +1,0 @@
-{"mappings":"ACEA","sources":["detall.f427bd26.css","src/assets/styles_detall.css"],"sourcesContent":["h2 {\n  color: #033b0d;\n  padding: 10px;\n}\n/*# sourceMappingURL=detall.f427bd26.css.map */\n","/*Estils per categories */\r\n\r\nh2 {\r\n    color: #033b0d;\r\n    padding:10px;\r\n}"],"names":[],"version":3,"file":"detall.f427bd26.css.map"}
