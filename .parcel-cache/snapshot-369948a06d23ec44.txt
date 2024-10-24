@@ -54,7 +54,7 @@
 66D:\Documents\Projectes_uoc\web\node_modules\nth-check\lib\parse.js133742515461206962 0
 76D:\Documents\Projectes_uoc\web\node_modules\regexp.prototype.flags\.eslintrc133742518066660469 0
 50D:\Documents\Projectes_uoc\web\node_modules\base-x133742515458228388 1
-57D:\Documents\Projectes_uoc\web\dist\index.99f7dd82.js.map133742660996692014 0
+57D:\Documents\Projectes_uoc\web\dist\index.99f7dd82.js.map133742670931204361 0
 42D:\Documents\Projectes_uoc\web\.posthtmlrc133742538109818006 0
 70D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2017\Invoke.js133742518080808058 0
 65D:\Documents\Projectes_uoc\web\node_modules\wrap-ansi-cjs\license133742518066222770 0
@@ -79,12 +79,12 @@
 64D:\Documents\Projectes_uoc\web\node_modules\pug-runtime\build.js133742526327621800 0
 80D:\Documents\Projectes_uoc\web\node_modules\is-shared-array-buffer\test\index.js133742518068206564 0
 100D:\Documents\Projectes_uoc\web\node_modules\@babel\helper-validator-identifier\lib\identifier.js.map133742515458467169 0
-35D:\Documents\Projectes_uoc\web\dist133742660996731988 1
+35D:\Documents\Projectes_uoc\web\dist133742670931234331 1
 63D:\Documents\Projectes_uoc\web\node_modules\svgo\lib\types.d.ts133742515466988376 0
 90D:\Documents\Projectes_uoc\web\node_modules\css-tree\cjs\syntax\node\MediaFeatureRange.cjs133742515471722493 0
 89D:\Documents\Projectes_uoc\web\node_modules\@babel\types\lib\converters\toKeyAlias.js.map133742526329010515 0
 77D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2024\StringIndexOf.js133742518087709619 0
-49D:\Documents\Projectes_uoc\web\src\css\festes.css133742622103690447 0
+49D:\Documents\Projectes_uoc\web\src\css\festes.css133742670812126271 0
 73D:\Documents\Projectes_uoc\web\node_modules\is-string\.github\FUNDING.yml133742518070895865 0
 49D:\Documents\Projectes_uoc\web\src\img\aigues.jpg133736720095493678 0
 91D:\Documents\Projectes_uoc\web\node_modules\css-tree\lib\tokenizer\char-code-definitions.js133742515474140676 0
@@ -171,7 +171,7 @@
 111D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\generator\index.js133742515470554423 0
 67D:\Documents\Projectes_uoc\web\node_modules\chrome-trace-event\dist133742515458949941 1
 113D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\types.d.ts.map133742515465949640 0
-46D:\Documents\Projectes_uoc\web\src\festes.html133742621679061666 0
+46D:\Documents\Projectes_uoc\web\src\festes.html133742669922560629 0
 67D:\Documents\Projectes_uoc\web\node_modules\is-array-buffer\LICENSE133742518067114249 0
 46D:\Documents\Projectes_uoc\web\src\footer.html133742617354139370 0
 93D:\Documents\Projectes_uoc\web\node_modules\foreground-child\dist\commonjs\all-signals.js.map133742518071665694 0
@@ -396,7 +396,7 @@
 74D:\Documents\Projectes_uoc\web\node_modules\resolve\test\resolver\quux\foo133742518073729920 1
 49D:\Documents\Projectes_uoc\web\node_modules\acorn133742526328435813 1
 56D:\Documents\Projectes_uoc\web\node_modules\side-channel133742518071210933 1
-59D:\Documents\Projectes_uoc\web\dist\festes.80bfed56.css.map133742660996692014 0
+59D:\Documents\Projectes_uoc\web\dist\festes.80bfed56.css.map133742670931204361 0
 94D:\Documents\Projectes_uoc\web\node_modules\htmlnano\lib\modules\collapseBooleanAttributes.cjs133742515459082022 0
 51D:\Documents\Projectes_uoc\web\node_modules\is-glob133742515457977535 1
 68D:\Documents\Projectes_uoc\web\node_modules\posthtml-include\LICENSE133742536357351168 0
@@ -2444,7 +2444,7 @@
 111D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\match.js133742515471692512 0
 77D:\Documents\Projectes_uoc\web\node_modules\lmdb\dependencies\lz4\lib\lz4hc.c133742515468168927 0
 67D:\Documents\Projectes_uoc\web\node_modules\@swc\helpers\_\_dispose133742515471234465 1
-55D:\Documents\Projectes_uoc\web\dist\aigues.13ac291d.jpg133742660987497678 0
+55D:\Documents\Projectes_uoc\web\dist\aigues.13ac291d.jpg133742670924733509 0
 78D:\Documents\Projectes_uoc\web\node_modules\string.prototype.trimstart\auto.js133742518068074983 0
 79D:\Documents\Projectes_uoc\web\node_modules\string.prototype.trimstart\index.js133742518070057637 0
 78D:\Documents\Projectes_uoc\web\node_modules\string.prototype.trimstart\LICENSE133742518067707449 0
@@ -2971,7 +2971,7 @@
 66D:\Documents\Projectes_uoc\web\node_modules\semver\functions\lt.js133742515465518269 0
 67D:\Documents\Projectes_uoc\web\node_modules\semver\functions\lte.js133742515465671292 0
 74D:\Documents\Projectes_uoc\web\node_modules\domutils\lib\querying.d.ts.map133742515464135059 0
-56D:\Documents\Projectes_uoc\web\dist\bg-home.9e63992f.jpg133742660993374059 0
+56D:\Documents\Projectes_uoc\web\dist\bg-home.9e63992f.jpg133742670928950913 0
 68D:\Documents\Projectes_uoc\web\node_modules\@parcel\packager-css\src133742515457654372 1
 79D:\Documents\Projectes_uoc\web\node_modules\postcss-value-parser\lib\index.d.ts133742515462209957 0
 85D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\features\user-timing.js133742515482063911 0
@@ -3345,7 +3345,7 @@
 80D:\Documents\Projectes_uoc\web\node_modules\@parcel\core\src\UncommittedAsset.js133742515474783313 0
 69D:\Documents\Projectes_uoc\web\node_modules\is-arrayish\.istanbul.yml133742515460106050 0
 77D:\Documents\Projectes_uoc\web\node_modules\json-parse-better-errors\index.js133742518067246960 0
-54D:\Documents\Projectes_uoc\web\dist\index.6da4531e.css133742660996552098 0
+54D:\Documents\Projectes_uoc\web\dist\index.6da4531e.css133742670931014488 0
 64D:\Documents\Projectes_uoc\web\node_modules\js-stringify\LICENSE133742526327769155 0
 78D:\Documents\Projectes_uoc\web\node_modules\resolve\test\node-modules-paths.js133742518074388584 0
 69D:\Documents\Projectes_uoc\web\node_modules\resolve\test\nonstring.js133742518074398576 0
@@ -3415,7 +3415,7 @@
 78D:\Documents\Projectes_uoc\web\node_modules\regexp.prototype.flags\polyfill.js133742518071058321 0
 71D:\Documents\Projectes_uoc\web\node_modules\object-inspect\test\deep.js133742518070199882 0
 70D:\Documents\Projectes_uoc\web\node_modules\graceful-fs\graceful-fs.js133742518067206986 0
-55D:\Documents\Projectes_uoc\web\dist\festes.80bfed56.css133742660996552098 0
+55D:\Documents\Projectes_uoc\web\dist\festes.80bfed56.css133742670931014488 0
 100D:\Documents\Projectes_uoc\web\node_modules\resolve\test\resolver\nested_symlinks\mylib\package.json133742518074894379 0
 81D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2022\BigInt\bitwiseXOR.js133742518075911059 0
 73D:\Documents\Projectes_uoc\web\node_modules\css-select\lib\esm\general.js133742515463103483 0
@@ -4830,7 +4830,7 @@
 81D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2017\DetachArrayBuffer.js133742518078251316 0
 55D:\Documents\Projectes_uoc\web\node_modules\js-yaml\bin133742515463591173 1
 64D:\Documents\Projectes_uoc\web\node_modules\js-yaml\CHANGELOG.md133742515466978382 0
-57D:\Documents\Projectes_uoc\web\dist\index.ed6c40e3.js.map133742660996692014 0
+57D:\Documents\Projectes_uoc\web\dist\index.ed6c40e3.js.map133742670931204361 0
 74D:\Documents\Projectes_uoc\web\node_modules\@parcel\node-resolver-core\lib133742515460357409 1
 56D:\Documents\Projectes_uoc\web\node_modules\js-yaml\dist133742515467510371 1
 60D:\Documents\Projectes_uoc\web\node_modules\js-yaml\index.js133742515463047443 0
@@ -5517,7 +5517,7 @@
 89D:\Documents\Projectes_uoc\web\node_modules\glob\node_modules\minimatch\dist\esm\index.js133742518071481229 0
 93D:\Documents\Projectes_uoc\web\node_modules\glob\node_modules\minimatch\dist\esm\package.json133742518071765632 0
 76D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2017\ObjectCreate.js133742518085041101 0
-53D:\Documents\Projectes_uoc\web\dist\menu.0db11abe.png133742660987497678 0
+53D:\Documents\Projectes_uoc\web\dist\menu.0db11abe.png133742670924733509 0
 94D:\Documents\Projectes_uoc\web\node_modules\glob\node_modules\minimatch\dist\esm\unescape.d.ts133742518073699939 0
 98D:\Documents\Projectes_uoc\web\node_modules\glob\node_modules\minimatch\dist\esm\unescape.d.ts.map133742518072919183 0
 96D:\Documents\Projectes_uoc\web\node_modules\glob\node_modules\minimatch\dist\esm\unescape.js.map133742518072939439 0
@@ -5866,7 +5866,7 @@
 89D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2024\Number\unsignedRightShift.js133742518090941584 0
 52D:\Documents\Projectes_uoc\web\node_modules\csso\cjs133742515468470199 1
 84D:\Documents\Projectes_uoc\web\node_modules\css-select\node_modules\domutils\LICENSE133742515456466420 0
-49D:\Documents\Projectes_uoc\web\dist\enllacos.html133742660996552098 0
+49D:\Documents\Projectes_uoc\web\dist\enllacos.html133742670931014488 0
 72D:\Documents\Projectes_uoc\web\node_modules\es-to-primitive\package.json133742518071430174 0
 107D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\stringifier.js133742515470990441 0
 74D:\Documents\Projectes_uoc\web\node_modules\es-to-primitive\test\es2015.js133742518068277524 0
@@ -6273,7 +6273,7 @@
 82D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2023\AsyncIteratorClose.js133742518075512084 0
 97D:\Documents\Projectes_uoc\web\node_modules\csso\node_modules\mdn-data\css\properties.schema.json133742515465290338 0
 72D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2023\truncate.js133742518090310733 0
-57D:\Documents\Projectes_uoc\web\dist\enllacos.0ad97c76.css133742660996552098 0
+57D:\Documents\Projectes_uoc\web\dist\enllacos.0ad97c76.css133742670931014488 0
 67D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2023\BigInt133742518090920579 1
 73D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2023\BinaryAnd.js133742518075582035 0
 72D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2023\BinaryOr.js133742518075612216 0
@@ -6521,7 +6521,7 @@
 81D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2022\GetMatchIndexPair.js133742518079317373 0
 76D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2018\Canonicalize.js133742518076169963 0
 73D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2022\GetMethod.js133742518079407315 0
-55D:\Documents\Projectes_uoc\web\dist\lleida.3adbe2d0.png133742660993374059 0
+55D:\Documents\Projectes_uoc\web\dist\lleida.3adbe2d0.png133742670928950913 0
 81D:\Documents\Projectes_uoc\web\node_modules\es-abstract\2022\GetPromiseResolve.js133742518079550676 0
 94D:\Documents\Projectes_uoc\web\node_modules\css-select\node_modules\entities\lib\encode.js.map133742515468601043 0
 81D:\Documents\Projectes_uoc\web\node_modules\@swc\helpers\_\_sliced_to_array_loose133742515473428571 1
@@ -7832,7 +7832,7 @@
 77D:\Documents\Projectes_uoc\web\node_modules\electron-to-chromium\package.json133742515462889716 0
 63D:\Documents\Projectes_uoc\web\node_modules\@swc\types\index.ts133742515458138446 0
 74D:\Documents\Projectes_uoc\web\node_modules\electron-to-chromium\README.md133742515463369799 0
-50D:\Documents\Projectes_uoc\web\dist\categoria.html133742660996552098 0
+50D:\Documents\Projectes_uoc\web\dist\categoria.html133742670931004497 0
 66D:\Documents\Projectes_uoc\web\node_modules\concat-map\test\map.js133742518069560876 0
 78D:\Documents\Projectes_uoc\web\node_modules\electron-to-chromium\versions.json133742515463118532 0
 76D:\Documents\Projectes_uoc\web\node_modules\eastasianwidth\eastasianwidth.js133742518066700443 0
@@ -8788,7 +8788,7 @@
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\KH.js133742515479324582 0
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\KR.js133742515479364556 0
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\KW.js133742515479374551 0
-46D:\Documents\Projectes_uoc\web\dist\index.html133742660996552098 0
+46D:\Documents\Projectes_uoc\web\dist\index.html133742670931004497 0
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\KY.js133742515479384544 0
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\LB.js133742515479416926 0
 75D:\Documents\Projectes_uoc\web\node_modules\caniuse-lite\data\regions\LC.js133742515479426916 0
@@ -9622,7 +9622,7 @@
 71D:\Documents\Projectes_uoc\web\node_modules\@parcel\reporter-dev-server133742515465558243 1
 67D:\Documents\Projectes_uoc\web\node_modules\@parcel\reporter-tracer133742515458360957 1
 74D:\Documents\Projectes_uoc\web\node_modules\@parcel\runtime-service-worker133742515458360957 1
-53D:\Documents\Projectes_uoc\web\dist\index.15d17b1c.js133742660996552098 0
+53D:\Documents\Projectes_uoc\web\dist\index.15d17b1c.js133742670931014488 0
 56D:\Documents\Projectes_uoc\web\node_modules\@parcel\rust133742515484387049 1
 85D:\Documents\Projectes_uoc\web\node_modules\@babel\types\lib\definitions\index.js.map133742526329201620 0
 62D:\Documents\Projectes_uoc\web\node_modules\@parcel\source-map133742515472213628 1
@@ -9687,7 +9687,7 @@
 70D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\package.json133742515471808970 0
 61D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\src133742515471573550 1
 62D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\test133742515471622557 1
-53D:\Documents\Projectes_uoc\web\dist\index.ed6c40e3.js133742660996552098 0
+53D:\Documents\Projectes_uoc\web\dist\index.ed6c40e3.js133742670931014488 0
 81D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\test\collection.test.js133742515462689614 0
 77D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\test\config.test.js133742515463491520 0
 81D:\Documents\Projectes_uoc\web\node_modules\@parcel\utils\test\DefaultMap.test.js133742515464508359 0
@@ -9805,6 +9805,7 @@
 116D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\cleanupNumericValues.js133742515463663670 0
 86D:\Documents\Projectes_uoc\web\node_modules\@parcel\transformer-babel\src\constants.js133742515462809767 0
 81D:\Documents\Projectes_uoc\web\node_modules\@parcel\transformer-babel\src\flow.js133742515463309843 0
+59D:\Documents\Projectes_uoc\web\dist\festes.60bae98a.css.map133742670931204361 0
 94D:\Documents\Projectes_uoc\web\node_modules\@parcel\transformer-babel\src\remapAstLocations.js133742515464410359 0
 82D:\Documents\Projectes_uoc\web\node_modules\@parcel\transformer-babel\src\types.js133742515464674410 0
 82D:\Documents\Projectes_uoc\web\node_modules\@parcel\transformer-babel\src\utils.js133742515465139948 0
@@ -9970,7 +9971,7 @@
 113D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\packages\peers-2.0\package.json133742515468676065 0
 105D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\packages\peers\index.js133742515465139948 0
 107D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\packages\foo-2.0\index.js133742515464317267 0
-60D:\Documents\Projectes_uoc\web\dist\caragolillo.531cc963.jpg133742660993384060 0
+60D:\Documents\Projectes_uoc\web\dist\caragolillo.531cc963.jpg133742670928950913 0
 111D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\packages\foo-2.0\package.json133742515468571054 0
 105D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\packages\a\package.json133742515468480192 0
 102D:\Documents\Projectes_uoc\web\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules133742515463128528 1
@@ -10252,7 +10253,7 @@
 109D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\sortAttrs.js133742515470843156 0
 116D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\sortDefsChildren.js133742515470893125 0
 116D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\_applyTransforms.js133742515458057485 0
-53D:\Documents\Projectes_uoc\web\dist\index.99f7dd82.js133742660996552098 0
+53D:\Documents\Projectes_uoc\web\dist\index.99f7dd82.js133742670931014488 0
 111D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\_transforms.js133742515461535911 0
 97D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\svgo133742515472003028 1
 100D:\Documents\Projectes_uoc\web\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\svgo.js133742515471702505 0
@@ -10606,7 +10607,7 @@
 74D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\src\LMDBCache.js133742515463309843 0
 70D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\src\types.js133742515463928068 0
 74D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\lib\constants.js133742515457149419 0
-52D:\Documents\Projectes_uoc\web\dist\boi.1139d863.jpg133742660993384060 0
+52D:\Documents\Projectes_uoc\web\dist\boi.1139d863.jpg133742670928950913 0
 73D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\lib\IDBCache.js133742515461867902 0
 70D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\lib\index.js133742515462478688 0
 70D:\Documents\Projectes_uoc\web\node_modules\@parcel\cache\lib\types.js133742515463623667 0
@@ -10839,17 +10840,16 @@
 54D:\Documents\Projectes_uoc\web\node_modules\.bin\which133742518092373397 0
 58D:\Documents\Projectes_uoc\web\node_modules\.bin\which.cmd133742518092373397 0
 58D:\Documents\Projectes_uoc\web\node_modules\.bin\which.ps1133742518092363398 0
-61D:\Documents\Projectes_uoc\web\dist\enllacos.0ad97c76.css.map133742660996692014 0
-55D:\Documents\Projectes_uoc\web\dist\festes.9f7504e9.css133742660996552098 0
-59D:\Documents\Projectes_uoc\web\dist\festes.9f7504e9.css.map133742660996692014 0
-47D:\Documents\Projectes_uoc\web\dist\festes.html133742660996552098 0
-56D:\Documents\Projectes_uoc\web\dist\guimera.8916f7d3.jpg133742660993384060 0
-57D:\Documents\Projectes_uoc\web\dist\index.15d17b1c.js.map133742660996692014 0
-58D:\Documents\Projectes_uoc\web\dist\index.6da4531e.css.map133742660996692014 0
-53D:\Documents\Projectes_uoc\web\dist\index.9cf7e214.js133742660996562097 0
-57D:\Documents\Projectes_uoc\web\dist\index.9cf7e214.js.map133742660996692014 0
-55D:\Documents\Projectes_uoc\web\dist\lleida.82176acd.jpg133742660987427722 0
-57D:\Documents\Projectes_uoc\web\dist\monastir.2118e0c5.jpg133742660993384060 0
-60D:\Documents\Projectes_uoc\web\dist\presentacio.465b5b31.css133742660996552098 0
-64D:\Documents\Projectes_uoc\web\dist\presentacio.465b5b31.css.map133742660996692014 0
-52D:\Documents\Projectes_uoc\web\dist\presentacio.html133742660996552098 0
+61D:\Documents\Projectes_uoc\web\dist\enllacos.0ad97c76.css.map133742670931204361 0
+55D:\Documents\Projectes_uoc\web\dist\festes.60bae98a.css133742670931014488 0
+47D:\Documents\Projectes_uoc\web\dist\festes.html133742670931014488 0
+56D:\Documents\Projectes_uoc\web\dist\guimera.8916f7d3.jpg133742670928950913 0
+57D:\Documents\Projectes_uoc\web\dist\index.15d17b1c.js.map133742670931204361 0
+58D:\Documents\Projectes_uoc\web\dist\index.6da4531e.css.map133742670931204361 0
+53D:\Documents\Projectes_uoc\web\dist\index.9cf7e214.js133742670931024473 0
+57D:\Documents\Projectes_uoc\web\dist\index.9cf7e214.js.map133742670931204361 0
+55D:\Documents\Projectes_uoc\web\dist\lleida.82176acd.jpg133742670924693533 0
+57D:\Documents\Projectes_uoc\web\dist\monastir.2118e0c5.jpg133742670928950913 0
+60D:\Documents\Projectes_uoc\web\dist\presentacio.465b5b31.css133742670931014488 0
+64D:\Documents\Projectes_uoc\web\dist\presentacio.465b5b31.css.map133742670931204361 0
+52D:\Documents\Projectes_uoc\web\dist\presentacio.html133742670931014488 0
