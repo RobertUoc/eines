@@ -1,0 +1,265 @@
+/*Estils */
+:root {
+    --primary-color: #081226;    
+    --secondary-color: #F2F2F2;
+    --color-fons: hwb(236 15% 46% / 0.982);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body {    
+    color: var(--primary-color);
+    line-height: 1.5;
+    font-family: "Fira Sans", sans-serif; 
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-align : justify;
+}
+
+/****************************
+Contenidors del lloc
+*****************************/
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--primary-color);
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;    
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    max-width: 1140px;
+}
+
+/****************************
+Página d'inici
+*****************************/
+body.home {    
+    background-color: var(--primary-color); 
+    background-image: url(../img/bg-home.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: var(--primary-color);
+    min-height: 100vh;
+    margin:0;
+    padding:0
+}
+
+.bg-container {
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: right top;
+    min-height: 300px;
+}
+
+body.home header {
+    background-color: transparent;
+    height: 10vh;
+}
+
+body.home main {
+    padding-top: 10vh;
+    height: 70vh;
+}
+
+body.home footer {
+    background-color: transparent;
+    height: 30vh;
+}
+
+
+body.home h1 {    
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+body.home h1 span {
+    display: block;
+    font-weight: 400;
+}
+
+body.home main p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+footer p {
+        font-size: inherit;
+        margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/****************************
+Menu
+*****************************/
+
+li, a {
+   text-decoration: none; 
+   list-style: none;
+}
+
+#menu {
+    display: none;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.icono {    
+    background-color: transparent;
+    width: 100px;
+}
+
+header label {    
+    display: none;
+    width: 20px;
+    height: 40px;
+    padding: 0px;
+    background-color: transparent;        
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header label {    
+    cursor: pointer;
+    background-color: transparent;     
+}
+
+.navbar ul {
+    margin : 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li:hover {
+    background-color: var(--color-fons);        
+    border-radius: 20px;
+}
+
+.navbar li a img:hover {
+    background-color: #e96908;
+}
+
+.navbar li a {
+   display: block; 
+   padding: 15px;
+   color: var(--primary-color);
+   font-weight: 700;
+}
+
+.navbar li a:hover {    
+    color: var(--secondary-color);    
+}
+
+@media(max-width:991px) {
+    .icono {
+        margin-top: -100px;
+        margin-left: 8px;
+        position:absolute;
+        display:nones ;
+    }
+
+    header label {        
+        display: block;        
+    }
+
+    .navbar {        
+        position: absolute;
+        background-color: var(--primary-color);         
+        margin-left: -100%;
+        padding: 5px;
+        transition: all 0.5s;                
+    }
+
+    .navbar li a {
+       color : var(--secondary-color);
+    }
+
+    .navbar li a:hover {
+        background-color: var(--color-fons);          
+        border-radius: 20px;
+    }
+
+    .navbar ul {     
+        margin-top:100px;   
+        flex-direction: column;
+    }
+
+    #menu:checked ~ .navbar {
+        margin: 0;
+    }
+}
+
+/****************************
+Resolucions
+*****************************/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+}
