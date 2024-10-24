@@ -1,1 +1,0 @@
-{"mappings":"AAEA;;;;;AAKA","sources":["src/css/festes.css"],"sourcesContent":["/*Estils per categories */\r\n\r\nh2 {\r\n    color: #033b0d;\r\n    padding:10px;\r\n}\r\n\r\nspan {\r\n    padding-left: 10px;\r\n}"],"names":[],"version":3,"file":"festes.a2c041b8.css.map","sourceRoot":"/__parcel_source_root/"}

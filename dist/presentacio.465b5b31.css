@@ -1,0 +1,2 @@
+.foto-galeria{flex-wrap:wrap;justify-content:space-between;gap:10px;margin-bottom:20px;display:flex}.foto{flex:calc(20% - 10px);padding:10px}.foto img{width:100%;height:auto;display:block}.articles{text-align:justify}.center{text-align:center;padding:10px}@media (max-width:768px){.foto{flex:calc(50% - 10px);max-width:calc(50% - 10px)}}@media (max-width:480px){.foto{flex:100%;max-width:100%}}
+/*# sourceMappingURL=presentacio.465b5b31.css.map */
