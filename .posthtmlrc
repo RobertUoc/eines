@@ -1,6 +1,7 @@
 {
   "plugins": {
     "posthtml-include": {},
-    "posthtml-doctype": { "doctype": "HTML 5" }
+    "posthtml-doctype": { "doctype": "HTML 5" },
+    "posthtml-img-autosize": { "root": "./img" }
   }
 }
