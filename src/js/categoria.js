@@ -16,6 +16,7 @@ export { ver_funcio }
 
 let categoria = document.getElementById('categoria');
 let home = document.getElementById('main');
+let navbar = document.getElementById('navbar');
 
 let botons = [{
           id : 'guimera',
@@ -57,7 +58,8 @@ let botons = [{
 
 ];
 let matriu = [];
-categoria?.addEventListener('click', () => {   
+categoria?.addEventListener('click', () => {       
+
     home.innerText = '';
     let h1 = document.createElement('h1');
     h1.classList.add('center');
@@ -100,9 +102,10 @@ categoria?.addEventListener('click', () => {
         let p = document.createElement('p');
         p.innerText = boto.text;
         d1.appendChild(p)
-        let d2 = document.createElement('div');
-        d2.classList.add('center');        
-        let img = document.createElement('img');        
+        let d2 = document.createElement('div');       
+        d2.classList.add('center');
+        let img = document.createElement('img');    
+        img.classList.add('foto');        
         img.setAttribute('src', boto.url);
 
         d2.appendChild(img);
