@@ -400,14 +400,14 @@ Presentacions
 }
 
 @media (max-width: 768px) {
-    .foto {
+    .fotografia {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 480px) {
-    .foto {
+    .fotografia {
         flex: 1 1 100%;
         max-width: 100%;
     }
