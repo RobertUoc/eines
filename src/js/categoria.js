@@ -108,9 +108,9 @@ categoria?.addEventListener('click', () => {
         d2.appendChild(img);
         d1.appendChild(d2);
         if (boto.canvi != undefined) {
-            d3 = document.createElement('div');
+            let d3 = document.createElement('div');
             d3.classList.add('center');
-            bt = document.createElement('button');
+            let bt = document.createElement('button');
             bt.classList.add('boto_categories');
             bt.id = boto.canvi;
             bt.innerText = boto.canvi_text;
