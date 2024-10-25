@@ -4,55 +4,61 @@ import foto3 from '../img/boi.jpg';
 import foto4 from '../img/aigues.jpg';
 import foto5 from '../img/monastir.jpg';
 
+let fotos = [{
+    url : foto1,
+    alt : 'Guimera'
+    },
+    {
+    url : foto2,
+    alt : 'Lleida'
+    },
+    {
+    url : foto3,
+    alt : 'Boi'
+    },
+    {
+    url : foto4,
+    alt : 'Aigües'
+    },
+    {
+    url : foto5,
+    alt : 'Vallbona'
+    }
+];
+
+let articles = [{
+        titul : 'Inici de la Visita: La Seu Vella',
+        missatge : "La visita comença a la Seu Vella, l'antiga catedral que és el principal monument arquitectònic de la ciutat. S'alça imponent sobre un puig que porta el seu nom, des del qual es pot contemplar tota la ciutat, el riu Segre i gran part de l'horta de Lleida. La Seu Vella forma part d'un conjunt monumental integrat pel Castell del Rei o la Suda i la fortificació militar que els envolta."
+        },
+        {
+        titul : 'Descobrint el Centre de Lleida',
+        missatge : "Després, baixarem cap al centre, fent parada a l'església de Sant Llorenç, un temple medieval molt apreciat pels lleidatans. Arribarem a l'Eix Comercial, que segueix el traçat del Camí de Sant Jaume, una de les principals vies de la ciutat."
+        },
+        {
+        titul : 'Edificis Emblemàtics', 
+        missatge : "En el recorregut, trobarem diversos edificis destacats:",
+        fills : [ 'La Seu Nova, construïda al segle XVIII per substituir la vella que havia esdevingut una caserna militar.',
+            "L'Hospital de Santa Maria, un edifici gòtic que acollia els més necessitats i els pelegrins.",
+            "La Capella del Peu del Romeu, dedicada a Santiago, situada sobre l'antiga via de pelegrinatge de la ruta jacobea.",
+            "El Palau de la Paeria, l'Ajuntament de Lleida, ubicat en un antic palau senyorial del segle XIII, amb antigues dependències com les presons que es poden visitar.",
+            "El Palau de la Diputació, construït reaprofitant estructures de l'antic hospici, amb el notable balcó del Serraller, davant de la pintoresca Casa de Sauces."
+        ]
+        },
+        {
+        titul : 'Els Camps Elisis',
+        missatge : "L'eix comercial i històric és paral·lel al riu Segre, un dels principals elements que dóna personalitat a la ciutat. Just a l'altra banda del riu trobem els Camps Elisis, inspirats en el conegut parc francès. És un recinte públic amb jardins d'estil francès i romàntic anglès, construïts sobre terrenys boscosos, que acull edificis de finals del segle XIX i principis del XX."
+        }
+];
+
 let presentacio = document.getElementById('presentacio');
 let home = document.getElementById('main')
 
 presentacio?.addEventListener('click', () => {        
-    let fotos = [{
-                url : foto1,
-                alt : 'Guimera'
-                },
-                {
-                url : foto2,
-                alt : 'Lleida'
-                },
-                {
-                url : foto3,
-                alt : 'Boi'
-                },
-                {
-                url : foto4,
-                alt : 'Aigües'
-                },
-                {
-                url : foto5,
-                alt : 'Vallbona'
-                }
-    ];
+    // Amago el menu
+    let rect = imagen.getBoundingClientRect();
+    if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
+    //
 
-    let articles = [{
-                    titul : 'Inici de la Visita: La Seu Vella',
-                    missatge : "La visita comença a la Seu Vella, l'antiga catedral que és el principal monument arquitectònic de la ciutat. S'alça imponent sobre un puig que porta el seu nom, des del qual es pot contemplar tota la ciutat, el riu Segre i gran part de l'horta de Lleida. La Seu Vella forma part d'un conjunt monumental integrat pel Castell del Rei o la Suda i la fortificació militar que els envolta."
-                    },
-                    {
-                    titul : 'Descobrint el Centre de Lleida',
-                    missatge : "Després, baixarem cap al centre, fent parada a l'església de Sant Llorenç, un temple medieval molt apreciat pels lleidatans. Arribarem a l'Eix Comercial, que segueix el traçat del Camí de Sant Jaume, una de les principals vies de la ciutat."
-                    },
-                    {
-                    titul : 'Edificis Emblemàtics', 
-                    missatge : "En el recorregut, trobarem diversos edificis destacats:",
-                    fills : [ 'La Seu Nova, construïda al segle XVIII per substituir la vella que havia esdevingut una caserna militar.',
-                        "L'Hospital de Santa Maria, un edifici gòtic que acollia els més necessitats i els pelegrins.",
-                        "La Capella del Peu del Romeu, dedicada a Santiago, situada sobre l'antiga via de pelegrinatge de la ruta jacobea.",
-                        "El Palau de la Paeria, l'Ajuntament de Lleida, ubicat en un antic palau senyorial del segle XIII, amb antigues dependències com les presons que es poden visitar.",
-                        "El Palau de la Diputació, construït reaprofitant estructures de l'antic hospici, amb el notable balcó del Serraller, davant de la pintoresca Casa de Sauces."
-                    ]
-                    },
-                    {
-                    titul : 'Els Camps Elisis',
-                    missatge : "L'eix comercial i històric és paral·lel al riu Segre, un dels principals elements que dóna personalitat a la ciutat. Just a l'altra banda del riu trobem els Camps Elisis, inspirats en el conegut parc francès. És un recinte públic amb jardins d'estil francès i romàntic anglès, construïts sobre terrenys boscosos, que acull edificis de finals del segle XIX i principis del XX."
-                    }
-    ];
 
     home.innerText = '';
     let h1 = document.createElement('h1');

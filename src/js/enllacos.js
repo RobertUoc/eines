@@ -1,11 +1,17 @@
+const links = ['https://www.viajeroscallejeros.com/lugares-que-ver-en-lleida/', 
+    'https://www.caragolillobrillo.org/', 
+    'http://www.catvisit.com/es/lleida-historia-cultura-y-el-segre/'
+    ];
+    
 let enllacos = document.getElementById('enllacos');
 let home = document.getElementById('main')
 
 enllacos?.addEventListener('click', () => {        
-    const links = ['https://www.viajeroscallejeros.com/lugares-que-ver-en-lleida/', 
-                   'https://www.caragolillobrillo.org/', 
-                   'http://www.catvisit.com/es/lleida-historia-cultura-y-el-segre/'
-                   ];
+
+    // Amago el menu
+    let rect = imagen.getBoundingClientRect();
+    if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
+    //
 
     home.innerText = '';
     let h1 = document.createElement('h1');

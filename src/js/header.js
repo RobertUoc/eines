@@ -7,5 +7,5 @@ import { enllacos } from "../js/enllacos.js";
 import { presentacio } from "../js/presentacio.js";
 import { categories } from "./categoria.js";
 
-
-
+let menu = document.getElementById('menu');
+let imagen = document.getElementById('imagen');
