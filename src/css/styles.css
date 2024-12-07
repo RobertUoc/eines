@@ -504,7 +504,7 @@ Presentacions
 } 
 
 .wheel { 
-    animation: rotateWheel 3s linear infinite; 
+    animation: rotateWheel 1s linear infinite; 
 }
 
 @keyframes rotateWheel { 
