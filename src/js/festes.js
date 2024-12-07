@@ -78,7 +78,7 @@ function lesFestes() {
 
 export {lesFestes};
 
-festes?.addEventListener('click', () => {   
+festes?.addEventListener('click', () => {       
     // Amago el menu
     let rect = imagen.getBoundingClientRect();
     if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }

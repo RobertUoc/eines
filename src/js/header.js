@@ -1,4 +1,3 @@
-
 import { styles } from '../css/styles.css';
 
 import { funcions } from "../js/funcions.js";

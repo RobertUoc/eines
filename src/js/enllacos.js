@@ -6,8 +6,7 @@ const links = ['https://www.viajeroscallejeros.com/lugares-que-ver-en-lleida/',
 let enllacos = document.getElementById('enllacos');
 let home = document.getElementById('main')
 
-enllacos?.addEventListener('click', () => {        
-
+function lesEnllacos() {
     // Amago el menu
     let rect = imagen.getBoundingClientRect();
     if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
@@ -32,7 +31,14 @@ enllacos?.addEventListener('click', () => {
         
     div.appendChild(ol);
     home.appendChild(h1);
-    home.appendChild(div);
+    home.appendChild(div);    
+}
+
+export {lesEnllacos};
+
+enllacos?.addEventListener('click', () => {        
+
+    lesEnllacos();
 
 });
 
