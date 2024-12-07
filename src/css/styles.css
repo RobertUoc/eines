@@ -194,7 +194,6 @@ header label {
     color: var(--secondary-color);    
 }
 
-
 /*** 
    footer 
 **/
@@ -464,6 +463,13 @@ Presentacions
         gap: 10px;
         max-width: calc(60% - 10px);
     }
+
+    .foto-galeria {
+        flex-direction: column; 
+        align-items: center;                                
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media (max-width: 480px) {

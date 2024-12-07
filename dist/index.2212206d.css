@@ -420,6 +420,12 @@ span {
     gap: 10px;
     max-width: calc(60% - 10px);
   }
+
+  .foto-galeria {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 @media (width <= 480px) {
