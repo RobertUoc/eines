@@ -461,7 +461,7 @@ span {
 }
 
 .wheel {
-  animation: 3s linear infinite rotateWheel;
+  animation: 1s linear infinite rotateWheel;
 }
 
 @keyframes rotateWheel {

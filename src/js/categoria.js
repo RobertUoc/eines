@@ -77,9 +77,6 @@ let matriu = [];
 
 function lesCategories() {
        // Amago el menu
-       let rect = imagen.getBoundingClientRect();
-       if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
-       //
        home.innerText = '';
        let h1 = document.createElement('h1');
        h1.classList.add('center');
@@ -158,7 +155,7 @@ export {lesCategories};
 
 categoria?.addEventListener('click', () => {       
     // Amago el menu
-    let rect = imagen.getBoundingClientRect();
+    let rect = imagen.getBoundingClientRect();    
     if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
     //
     lesCategories(); 
