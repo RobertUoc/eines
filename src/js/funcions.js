@@ -45,6 +45,10 @@ let index = document.getElementById('index');
 let home = document.getElementById('main')
 
 principal();
-index?.addEventListener('click', () => {           
+index?.addEventListener('click', () => {     
+    // Amago el menu
+    let rect = imagen.getBoundingClientRect();    
+    if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
+    //          
     principal();
 });

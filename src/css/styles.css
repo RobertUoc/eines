@@ -238,8 +238,6 @@ footer ul li:last-child::after {
     padding-left: 0.5rem;
 }
 
-
-
 @media(max-width:991px) {
     .icono {
         margin-top: -100px;
@@ -278,6 +276,7 @@ footer ul li:last-child::after {
     #menu:checked ~ .navbar {
         margin: 0;
     }
+
 }
 
 /****************************
