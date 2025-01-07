@@ -596,11 +596,26 @@ var _presentacioJs = require("../js/presentacio.js");
 var _categoriaJs = require("./categoria.js");
 let menu = document.getElementById("menu");
 let imagen = document.getElementById("imagen");
+document.addEventListener("DOMContentLoaded", ()=>{
+    const lazyImages = document.querySelectorAll(".lazy");
+    const observer = new IntersectionObserver((entries, observer)=>{
+        entries.forEach((entry)=>{
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach((img)=>{
+        observer.observe(img);
+    });
+});
 
 },{"../css/styles.css":"1CY4s","../js/funcions.js":"jQyzi","../js/festes.js":"gpyYL","../js/enllacos.js":"gQsUk","../js/presentacio.js":"i0UJj","./categoria.js":"bmnj6"}],"1CY4s":[function() {},{}],"jQyzi":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _portadaPng = require("../img/portada.png");
-var _portadaPngDefault = parcelHelpers.interopDefault(_portadaPng);
+var _portadaWebp = require("../img/portada.webp");
+var _portadaWebpDefault = parcelHelpers.interopDefault(_portadaWebp);
 const links = document.querySelectorAll("a");
 links.forEach((link)=>{
     link.addEventListener("click", function(e) {
@@ -610,13 +625,18 @@ links.forEach((link)=>{
         }, 500);
     });
 });
-function principal() {
+async function principal() {
     home.innerText = "";
     let div_ext = document.createElement("div");
     let img = document.createElement("img");
     div_ext.classList.add("bg-container");
-    img.setAttribute("src", (0, _portadaPngDefault.default));
+    img.setAttribute("src", (0, _portadaWebpDefault.default));
     img.setAttribute("alt", "llieda");
+    img.setAttribute("rel", "preload");
+    img.setAttribute("as", "image");
+    img.setAttribute("width", "447px");
+    img.setAttribute("height", "auto");
+    img.setAttribute("loading", "lazy");
     img.classList.add("fotografia");
     img.classList.add("clip-animation");
     div_ext.appendChild(img);
@@ -645,7 +665,7 @@ index?.addEventListener("click", ()=>{
     principal();
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/portada.png":"9nVdg"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/portada.webp":"h2dzm"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -675,10 +695,10 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9nVdg":[function(require,module,exports) {
-module.exports = require("b7e5e8748f92d31e").getBundleURL("bLxZJ") + "portada.f411ff1c.png" + "?" + Date.now();
+},{}],"h2dzm":[function(require,module,exports) {
+module.exports = require("4c8e826c8e54b0f7").getBundleURL("bLxZJ") + "portada.635eac09.webp" + "?" + Date.now();
 
-},{"b7e5e8748f92d31e":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"4c8e826c8e54b0f7":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -717,8 +737,8 @@ exports.getOrigin = getOrigin;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "lesFestes", ()=>lesFestes);
-var _caragolilloJpg = require("../img/caragolillo.jpg");
-var _caragolilloJpgDefault = parcelHelpers.interopDefault(_caragolilloJpg);
+var _caragolilloWebp = require("../img/caragolillo.webp");
+var _caragolilloWebpDefault = parcelHelpers.interopDefault(_caragolilloWebp);
 let multimedia = [
     {
         titol: "Himne Caragolillo Brillo",
@@ -738,7 +758,7 @@ let multimedia = [
 ];
 let festes = document.getElementById("festes");
 let home = document.getElementById("main");
-function lesFestes() {
+async function lesFestes() {
     home.innerText = "";
     let div = document.createElement("div");
     div.classList.add("container");
@@ -748,9 +768,13 @@ function lesFestes() {
     let h2 = document.createElement("h2");
     h2.innerText = "Aplec del Caragol";
     let img = document.createElement("img");
-    img.setAttribute("src", (0, _caragolilloJpgDefault.default));
     img.setAttribute("alt", "Caragolillo");
-    img.classList.add("foto");
+    // img.classList.add('foto');
+    img.classList.add("lazy");
+    img.setAttribute("width", "1058");
+    img.setAttribute("height", "260");
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("src", (0, _caragolilloWebpDefault.default));
     let links = document.createElement("div");
     links.classList.add("center");
     // youtube.
@@ -766,6 +790,8 @@ function lesFestes() {
         iframe.setAttribute("allow", "web-share");
         iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
         iframe.setAttribute("allowfullscreen", "allowfullscreen");
+        iframe.setAttribute("loading", "lazy");
+        iframe.classList.add("lazy");
         d.appendChild(iframe);
         links.appendChild(h2);
         links.appendChild(d);
@@ -795,10 +821,10 @@ festes?.addEventListener("click", ()=>{
     lesFestes();
 });
 
-},{"../img/caragolillo.jpg":"f6tQd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f6tQd":[function(require,module,exports) {
-module.exports = require("6357a9fe3c62469e").getBundleURL("bLxZJ") + "caragolillo.6f3eb82f.jpg" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/caragolillo.webp":"2o7jJ"}],"2o7jJ":[function(require,module,exports) {
+module.exports = require("77125134e3e84140").getBundleURL("bLxZJ") + "caragolillo.e380a438.webp" + "?" + Date.now();
 
-},{"6357a9fe3c62469e":"lgJ39"}],"gQsUk":[function(require,module,exports) {
+},{"77125134e3e84140":"lgJ39"}],"gQsUk":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "lesEnllacos", ()=>lesEnllacos);
@@ -840,40 +866,40 @@ enllacos?.addEventListener("click", ()=>{
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "lesPresentacio", ()=>lesPresentacio);
-var _guimeraJpg = require("../img/guimera.jpg");
-var _guimeraJpgDefault = parcelHelpers.interopDefault(_guimeraJpg);
-var _lleidaJpg = require("../img/lleida.jpg");
-var _lleidaJpgDefault = parcelHelpers.interopDefault(_lleidaJpg);
-var _boiJpg = require("../img/boi.jpg");
-var _boiJpgDefault = parcelHelpers.interopDefault(_boiJpg);
-var _aiguesJpg = require("../img/aigues.jpg");
-var _aiguesJpgDefault = parcelHelpers.interopDefault(_aiguesJpg);
-var _monastirJpg = require("../img/monastir.jpg");
-var _monastirJpgDefault = parcelHelpers.interopDefault(_monastirJpg);
+var _guimeraWebp = require("../img/guimera.webp");
+var _guimeraWebpDefault = parcelHelpers.interopDefault(_guimeraWebp);
+var _lleidaWebp = require("../img/lleida.webp");
+var _lleidaWebpDefault = parcelHelpers.interopDefault(_lleidaWebp);
+var _boiWebp = require("../img/boi.webp");
+var _boiWebpDefault = parcelHelpers.interopDefault(_boiWebp);
+var _aiguesWebp = require("../img/aigues.webp");
+var _aiguesWebpDefault = parcelHelpers.interopDefault(_aiguesWebp);
+var _monastirWebp = require("../img/monastir.webp");
+var _monastirWebpDefault = parcelHelpers.interopDefault(_monastirWebp);
 let fotos = [
     {
         id: "foto1",
-        url: (0, _guimeraJpgDefault.default),
+        url: (0, _guimeraWebpDefault.default),
         alt: "Guimera"
     },
     {
         id: "foto2",
-        url: (0, _lleidaJpgDefault.default),
+        url: (0, _lleidaWebpDefault.default),
         alt: "Lleida"
     },
     {
         id: "foto3",
-        url: (0, _boiJpgDefault.default),
+        url: (0, _boiWebpDefault.default),
         alt: "Boi"
     },
     {
         id: "foto4",
-        url: (0, _aiguesJpgDefault.default),
+        url: (0, _aiguesWebpDefault.default),
         alt: "Aig\xfces"
     },
     {
         id: "foto5",
-        url: (0, _monastirJpgDefault.default),
+        url: (0, _monastirWebpDefault.default),
         alt: "Vallbona"
     }
 ];
@@ -904,7 +930,7 @@ let articles = [
 ];
 let presentacio = document.getElementById("presentacio");
 let home = document.getElementById("main");
-function lesPresentacio() {
+async function lesPresentacio() {
     // Amago el menu
     let rect = imagen.getBoundingClientRect();
     if (rect.top > 0) menu.dispatchEvent(new MouseEvent("click"));
@@ -1000,6 +1026,7 @@ function lesPresentacio() {
         img.setAttribute("href", foto.url);
         img.setAttribute("width", "100");
         img.setAttribute("height", "100");
+        img.setAttribute("loading", "lazy");
         svg.appendChild(img);
         d.appendChild(svg);
         seccio1.appendChild(d);
@@ -1043,47 +1070,47 @@ presentacio?.addEventListener("click", ()=>{
     lesPresentacio();
 });
 
-},{"../img/guimera.jpg":"dPUYn","../img/lleida.jpg":"ku7nA","../img/boi.jpg":"jIRpT","../img/aigues.jpg":"7gZ8B","../img/monastir.jpg":"kxwb2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dPUYn":[function(require,module,exports) {
-module.exports = require("58a5329929810fa5").getBundleURL("bLxZJ") + "guimera.bc7c5ac3.jpg" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/guimera.webp":"avNUY","../img/lleida.webp":"jaK4Q","../img/boi.webp":"cx11u","../img/aigues.webp":"grib8","../img/monastir.webp":"cYllq"}],"avNUY":[function(require,module,exports) {
+module.exports = require("13fe3922f493fb8b").getBundleURL("bLxZJ") + "guimera.b7b4d1d7.webp" + "?" + Date.now();
 
-},{"58a5329929810fa5":"lgJ39"}],"ku7nA":[function(require,module,exports) {
-module.exports = require("94ac9a21f5925fad").getBundleURL("bLxZJ") + "lleida.8701186b.jpg" + "?" + Date.now();
+},{"13fe3922f493fb8b":"lgJ39"}],"jaK4Q":[function(require,module,exports) {
+module.exports = require("65e94e5903362a88").getBundleURL("bLxZJ") + "lleida.eab0df2a.webp" + "?" + Date.now();
 
-},{"94ac9a21f5925fad":"lgJ39"}],"jIRpT":[function(require,module,exports) {
-module.exports = require("732d840c3e94f3b0").getBundleURL("bLxZJ") + "boi.63918b17.jpg" + "?" + Date.now();
+},{"65e94e5903362a88":"lgJ39"}],"cx11u":[function(require,module,exports) {
+module.exports = require("fc2b9f9b34cf6384").getBundleURL("bLxZJ") + "boi.c49c3a18.webp" + "?" + Date.now();
 
-},{"732d840c3e94f3b0":"lgJ39"}],"7gZ8B":[function(require,module,exports) {
-module.exports = require("827f67c39b1e1fd5").getBundleURL("bLxZJ") + "aigues.cce6a5e4.jpg" + "?" + Date.now();
+},{"fc2b9f9b34cf6384":"lgJ39"}],"grib8":[function(require,module,exports) {
+module.exports = require("7a1305b6eee39fc3").getBundleURL("bLxZJ") + "aigues.177d88ad.webp" + "?" + Date.now();
 
-},{"827f67c39b1e1fd5":"lgJ39"}],"kxwb2":[function(require,module,exports) {
-module.exports = require("799901b1c8430bc8").getBundleURL("bLxZJ") + "monastir.95fcbac0.jpg" + "?" + Date.now();
+},{"7a1305b6eee39fc3":"lgJ39"}],"cYllq":[function(require,module,exports) {
+module.exports = require("4802042f4a410c6b").getBundleURL("bLxZJ") + "monastir.be3f9296.webp" + "?" + Date.now();
 
-},{"799901b1c8430bc8":"lgJ39"}],"bmnj6":[function(require,module,exports) {
+},{"4802042f4a410c6b":"lgJ39"}],"bmnj6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ver_funcio", ()=>ver_funcio);
 parcelHelpers.export(exports, "lesCategories", ()=>lesCategories);
-var _guimeraJpg = require("../img/guimera.jpg");
-var _guimeraJpgDefault = parcelHelpers.interopDefault(_guimeraJpg);
-var _aiguesJpg = require("../img/aigues.jpg");
-var _aiguesJpgDefault = parcelHelpers.interopDefault(_aiguesJpg);
-var _lleidaJpg = require("../img/lleida.jpg");
-var _lleidaJpgDefault = parcelHelpers.interopDefault(_lleidaJpg);
-var _boiJpg = require("../img/boi.jpg");
-var _boiJpgDefault = parcelHelpers.interopDefault(_boiJpg);
-var _monastirJpg = require("../img/monastir.jpg");
-var _monastirJpgDefault = parcelHelpers.interopDefault(_monastirJpg);
+var _guimeraWebp = require("../img/guimera.webp");
+var _guimeraWebpDefault = parcelHelpers.interopDefault(_guimeraWebp);
+var _aiguesWebp = require("../img/aigues.webp");
+var _aiguesWebpDefault = parcelHelpers.interopDefault(_aiguesWebp);
+var _lleidaWebp = require("../img/lleida.webp");
+var _lleidaWebpDefault = parcelHelpers.interopDefault(_lleidaWebp);
+var _boiWebp = require("../img/boi.webp");
+var _boiWebpDefault = parcelHelpers.interopDefault(_boiWebp);
+var _monastirWebp = require("../img/monastir.webp");
+var _monastirWebpDefault = parcelHelpers.interopDefault(_monastirWebp);
 //
-var _guimeraMJpg = require("../img/guimera_m.jpg");
-var _guimeraMJpgDefault = parcelHelpers.interopDefault(_guimeraMJpg);
-var _aiguesMJpg = require("../img/aigues_m.jpg");
-var _aiguesMJpgDefault = parcelHelpers.interopDefault(_aiguesMJpg);
-var _lleidaMJpg = require("../img/lleida_m.jpg");
-var _lleidaMJpgDefault = parcelHelpers.interopDefault(_lleidaMJpg);
-var _boiMJpg = require("../img/boi_m.jpg");
-var _boiMJpgDefault = parcelHelpers.interopDefault(_boiMJpg);
-var _monastirMJpg = require("../img/monastir_m.jpg");
-var _monastirMJpgDefault = parcelHelpers.interopDefault(_monastirMJpg);
+var _guimeraMWebp = require("../img/guimera_m.webp");
+var _guimeraMWebpDefault = parcelHelpers.interopDefault(_guimeraMWebp);
+var _aiguesMWebp = require("../img/aigues_m.webp");
+var _aiguesMWebpDefault = parcelHelpers.interopDefault(_aiguesMWebp);
+var _lleidaMWebp = require("../img/lleida_m.webp");
+var _lleidaMWebpDefault = parcelHelpers.interopDefault(_lleidaMWebp);
+var _boiMWebp = require("../img/boi_m.webp");
+var _boiMWebpDefault = parcelHelpers.interopDefault(_boiMWebp);
+var _monastirMWebp = require("../img/monastir_m.webp");
+var _monastirMWebpDefault = parcelHelpers.interopDefault(_monastirMWebp);
 var _festesJs = require("../js/festes.js");
 function ver_funcio(boton) {
     matriu.map((ciutat)=>{
@@ -1099,56 +1126,67 @@ let botons = [
         titul: "Gimera",
         id_text: "ver_guimera",
         text: "Una de les millors coses a fer a Lleida \xe9s passejar pels carrerons de Guimer\xe0 , un dels pobles m\xe9s bonics a veure a Catalunya . Flanquejat pel riu Corb i situat en un vessant d'una muntanya, aquest poble medieval enamora per les seves cases de pedra amb detalls en portes i finestres, i els seus carrerons costeruts, alguns amb arcades, que et portaran fins a l'Esgl\xe9sia de Santa Maria i la torre del castell, des d'on tindr\xe0s unes vistes fant\xe0stiques. Un cop acabis el recorregut pots tornar a baixar passant per la Pla\xe7a Major i alguns dels seus carrers m\xe9s bonics, com el del Cacau i de la Cendra, fins arribar una altra vegada a la riba del Corb, on no pots deixar de reposar forces prenent un aperitiu al Bar Moretes o esmorzar les seves famoses arengades de la mama , amb pa amb tom\xe0quet. Si t'animes no deixis de comentar-nos-ho al post, ens far\xe0 especial il\xb7lusi\xf3 saber-ho! A uns 2 quil\xf2metres de Guimer\xe0 hi ha les ru\xefnes del monestir de Vallsanta, que tamb\xe9 mereixen una visita.",
-        url: (0, _guimeraJpgDefault.default),
-        srcset: (0, _guimeraMJpgDefault.default),
-        sizes: "(max-width: 1000px)"
+        url: (0, _guimeraWebpDefault.default),
+        srcset: (0, _guimeraMWebpDefault.default),
+        sizes: "(max-width: 1000px)",
+        width: 800,
+        height: 534
     },
     {
         id: "aigues",
         titul: "Aig\xfcestortes",
         id_text: "ver_aigues",
         text: "El Parc Nacional d\xb4Aig\xfcestortes i Estany de Sant Maurici , \xe9s una altra de les meravelles que veure a Lleida i el nostre rac\xf3 favorit per gaudir de la natura. Aquest espai natural protegit, \xfanic al sud d'Europa, us permet fer rutes de senderisme entre muntanyes de m\xe9s de 3.000 metres d'al\xe7ada, llacs de tot tipus i colors, cascades, rius i una gran diversitat de fauna i flora. El parc disposa de dos accessos principals: el de Bo\xed i el d'Espot, als quals pots arribar amb autob\xfas o cotxe, aquesta \xfaltima \xe9s l'opci\xf3 m\xe9s recomanable. Si entreu per Bo\xed podreu observar els paisatges m\xe9s caracter\xedstics del parc com s\xf3n els prats i meandres, a m\xe9s de diversos llacs com el de Llebreta, Llong, Travessani, el Negre o el Monges, i muntanyes com la de Comaloforno, de 3.033 metres d'altitud . Mentre que si entres per Espot podr\xe0s veure el fam\xf3s Llac de Sant Maurici, els dos pics coneguts com Els Encantats , la cascada i el llac de Ratera, i la zona d'Amitges on pots trobar un refugi, un llac i dos pics a forma d'agulla. Tot i que \xe9s recomanable fer totes les rutes a peu, a la zona de Sant Maurici disposeu d'un servei de 4\xd74 que us portar\xe0 fins a la zona alta, per la qual cosa us estalviareu una part important de la pujada.",
-        url: (0, _aiguesJpgDefault.default),
-        srcset: (0, _aiguesMJpgDefault.default),
-        sizes: "(max-width: 1000px)"
+        url: (0, _aiguesWebpDefault.default),
+        srcset: (0, _aiguesMWebpDefault.default),
+        sizes: "(max-width: 1000px)",
+        width: 800,
+        height: 534
     },
     {
         id: "lleida",
         titul: "Lleida",
         id_text: "ver_lleida",
         text: "Lleida, la capital de la prov\xedncia i una desconeguda per al gran p\xfablic, \xe9s una ciutat perfecta per passar-hi un o dos dies visitant els seus nombrosos edificis hist\xf2rics i racons amb encant. Entre els seus edificis m\xe9s importants destaca la Seu Vella, una antiga catedral situada a dalt d'un tur\xf3 que meravella pel claustre i una alta torre, des d'on observar tota la ciutat i el seu entorn. Si voleu tenir vistes de la Seu Vella amb Lleida de fons, podeu pujar fins al mirador de l'antic Castell del Rei. Altres punts d'inter\xe8s de la ciutat s\xf3n la Catedral Nova, el Palau de la Paeria, l'Antic Hospital de Santa Maria i, sobretot, el Castell templer de Gardeny, un dels llocs que visitar a Lleida m\xe9s interessants . Per con\xe8ixer millor la hist\xf2ria d'aquest castell us recomanem reservar aquesta visita guiada . A m\xe9s de con\xe8ixer tots aquests atractius tur\xedstics, et recomanem rec\xf3rrer el Carrer Major, un dels carrers comercials m\xe9s llargs del pa\xeds, i passejar per la riba del Segre, a m\xe9s de tastar algun dels plats m\xe9s t\xedpics de la regi\xf3 com s\xf3n els cargols ( cargols) a la llauna seguint aquesta llista dels millors restaurants on menjar a Lleida . Si fas nit a la capital pots reservar a l' Hotel Real , al Zenit Lleida o al Ramon Berenguer IV .",
-        url: (0, _lleidaJpgDefault.default),
-        srcset: (0, _lleidaMJpgDefault.default),
+        url: (0, _lleidaWebpDefault.default),
+        srcset: (0, _lleidaMWebpDefault.default),
         sizes: "(max-width: 1000px)",
         canvi: "festes",
-        canvi_text: "Les Festes"
+        canvi_text: "Les Festes",
+        width: 800,
+        height: 534
     },
     {
         id: "boi",
         titul: "Vall Boi",
         id_text: "ver_boi",
         text: "Una ruta amb cotxe per les Esgl\xe9sies rom\xe0niques de la Vall de Bo\xed , \xe9s una altra de les millors coses a fer a la prov\xedncia de Lleida i un dels llocs que visitar a Catalunya m\xe9s imprescindibles. Aquestes esgl\xe9sies que comparteixen el mateix estil rom\xe0nic llombard, van ser constru\xefdes entre els segles XI i XII i declarades Patrimoni de la Humanitat per la Unesco. A m\xe9s d'estar ubicades en un entorn privilegiat, es caracteritzen per la bona utilitzaci\xf3 de la pedra, la decoraci\xf3 en arcs cecs i bandes llombardes, les altes torres campanar i la pres\xe8ncia de pintures murals en alguna. Tot i que la m\xe9s famosa \xe9s l'esgl\xe9sia de Santa Maria de Ta\xfcll, que tenia al seu interior la valuosa pintura del Pantocrator, val la pena fer la ruta completa que passi per les esgl\xe9sies de Sant Climent de Ta\xfcll , Sant Joan de Bo\xed, Santa Eul\xe0lia 'Erill la Vall, Sant Feliu de Barruera, Nativitat de Durro, Santa Maria de Cardet, l'Assumpci\xf3 de C\xf3ll i l'ermita de Sant Quirc de Durro. La majoria estan obertes cada dia de 10h a 14h i de 16h a 19h. Un dels nostres consells si visites aquests pobles de la Vall de Bo\xed, \xe9s allotjar-te en una casa o hotel rural com el Ratiner , on vam estar nosaltres i vam poder gaudir d'uns deliciosos esmorzars a base d'embotits locals. Si disposes de m\xe9s temps pots acostar-te a Viella i la bonica Vall d'Aran. Per a m\xe9s informaci\xf3 podeu consultar aquesta ruta per la Vall de Bo\xed en un cap de setmana . ",
-        url: (0, _boiJpgDefault.default),
-        srcset: (0, _boiMJpgDefault.default),
-        sizes: "(max-width: 1000px)"
+        url: (0, _boiWebpDefault.default),
+        srcset: (0, _boiMWebpDefault.default),
+        sizes: "(max-width: 1000px)",
+        width: 800,
+        height: 534
     },
     {
         id: "vallbona",
         titul: "Vallbona",
         id_text: "ver_vallbona",
         text: "El monestir de Vallbona de les Monges , parada obligada de la coneguda com a Ruta del Cister, que agrupa diversos monestirs cistercencs, \xe9s una altra de les meravelles a veure a Lleida (Lleida) . Fundat al segle XII, aquest monestir que ha conservat la seva comunitat femenina durant m\xe9s de 850 anys i on pots fer nit, destaca pels seus dos cimboris g\xf2tics, el bell claustre en qu\xe8 es barregen l'estil \xe0rab, rom\xe0nic i g\xf2tic, i la Sala Capitular amb diversos sepulcres d'abadesses del monestir. ",
-        url: (0, _monastirJpgDefault.default),
-        srcset: (0, _monastirMJpgDefault.default),
-        sizes: "(max-width: 1000px)"
+        url: (0, _monastirWebpDefault.default),
+        srcset: (0, _monastirMWebpDefault.default),
+        sizes: "(max-width: 1000px)",
+        width: 800,
+        height: 534
     }
 ];
 let matriu = [];
-function lesCategories() {
+async function lesCategories() {
     // Amago el menu
     home.innerText = "";
     let h1 = document.createElement("h1");
     h1.classList.add("center");
     h1.innerText = "Categoria";
+    let fragment = document.createDocumentFragment();
     let div = document.createElement("div");
     let p = document.createElement("p");
     p.innerText = "Aquesta llista dels millors llocs a veure a Lleida i prov\xedncia, ens ajudar\xe0 a con\xe8ixer aquesta regi\xf3 plena de meravelles naturals i monuments hist\xf2rics. Situada al nord-est d'Espanya, a l'interior de Catalunya, ofereix experi\xe8ncies fant\xe0stiques en contacte amb la natura m\xe9s aut\xe8ntica i coneixent el seu passat medieval a petits pobles plens d'encant. Per arribar a Lleida disposes del tren d'alta velocitat (AVE) que t\xe9 parada a la capital o pots volar a Barcelona, \u200B\u200Ba menys de dues hores amb cotxe. Aqui tens una llista plena de llocs a visitar a Lleida imprescindibles. Comencem!";
@@ -1168,6 +1206,7 @@ function lesCategories() {
         d.appendChild(but);
         butons.appendChild(d);
     });
+    document.body.appendChild(fragment);
     div.appendChild(h1);
     div.appendChild(p);
     div.appendChild(butons);
@@ -1187,7 +1226,12 @@ function lesCategories() {
         d2.classList.add("center");
         let img = document.createElement("img");
         img.classList.add("foto");
-        img.setAttribute("src", boto.url);
+        img.classList.add("lazy");
+        img.setAttribute("alt", boto.titul);
+        img.setAttribute("width", boto.width);
+        img.setAttribute("height", boto.height);
+        img.setAttribute("data-src", boto.url);
+        img.setAttribute("loading", "lazy");
         if (boto.srcset != undefined) {
             img.setAttribute("srcset", `${boto.srcset} 991w, ${boto.url}`);
             img.setAttribute("sizes", boto.sizes);
@@ -1220,22 +1264,22 @@ categoria?.addEventListener("click", ()=>{
     lesCategories();
 });
 
-},{"../img/guimera.jpg":"dPUYn","../img/aigues.jpg":"7gZ8B","../img/lleida.jpg":"ku7nA","../img/boi.jpg":"jIRpT","../img/monastir.jpg":"kxwb2","../js/festes.js":"gpyYL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/guimera_m.jpg":"gdYEb","../img/aigues_m.jpg":"aNBK1","../img/lleida_m.jpg":"4nRAQ","../img/boi_m.jpg":"5sRia","../img/monastir_m.jpg":"78kJM"}],"gdYEb":[function(require,module,exports) {
-module.exports = require("be53a4446e11fbac").getBundleURL("bLxZJ") + "guimera_m.92bca8a4.jpg" + "?" + Date.now();
+},{"../js/festes.js":"gpyYL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/guimera.webp":"avNUY","../img/aigues.webp":"grib8","../img/lleida.webp":"jaK4Q","../img/boi.webp":"cx11u","../img/monastir.webp":"cYllq","../img/guimera_m.webp":"kl4DO","../img/aigues_m.webp":"iHeJ4","../img/lleida_m.webp":"gFxTR","../img/boi_m.webp":"hUZj8","../img/monastir_m.webp":"eUqb9"}],"kl4DO":[function(require,module,exports) {
+module.exports = require("a0769d2253b5cd5f").getBundleURL("bLxZJ") + "guimera_m.87cb5e30.webp" + "?" + Date.now();
 
-},{"be53a4446e11fbac":"lgJ39"}],"aNBK1":[function(require,module,exports) {
-module.exports = require("b8ae6413e3dc782b").getBundleURL("bLxZJ") + "aigues_m.8c229791.jpg" + "?" + Date.now();
+},{"a0769d2253b5cd5f":"lgJ39"}],"iHeJ4":[function(require,module,exports) {
+module.exports = require("442cd22ab8c92d03").getBundleURL("bLxZJ") + "aigues_m.b4e6e3a5.webp" + "?" + Date.now();
 
-},{"b8ae6413e3dc782b":"lgJ39"}],"4nRAQ":[function(require,module,exports) {
-module.exports = require("ee62fdd8d1d9be17").getBundleURL("bLxZJ") + "lleida_m.a085ca88.jpg" + "?" + Date.now();
+},{"442cd22ab8c92d03":"lgJ39"}],"gFxTR":[function(require,module,exports) {
+module.exports = require("1e037721e96632f3").getBundleURL("bLxZJ") + "lleida_m.5b855a48.webp" + "?" + Date.now();
 
-},{"ee62fdd8d1d9be17":"lgJ39"}],"5sRia":[function(require,module,exports) {
-module.exports = require("818b138c75a6311").getBundleURL("bLxZJ") + "boi_m.ec027f11.jpg" + "?" + Date.now();
+},{"1e037721e96632f3":"lgJ39"}],"hUZj8":[function(require,module,exports) {
+module.exports = require("52d1c957ab1eea2").getBundleURL("bLxZJ") + "boi_m.ffb2b4e7.webp" + "?" + Date.now();
 
-},{"818b138c75a6311":"lgJ39"}],"78kJM":[function(require,module,exports) {
-module.exports = require("26fc753110423758").getBundleURL("bLxZJ") + "monastir_m.d89c06c4.jpg" + "?" + Date.now();
+},{"52d1c957ab1eea2":"lgJ39"}],"eUqb9":[function(require,module,exports) {
+module.exports = require("b1db2a75daed58fb").getBundleURL("bLxZJ") + "monastir_m.adc63780.webp" + "?" + Date.now();
 
-},{"26fc753110423758":"lgJ39"}],"fXl6u":[function(require,module,exports) {
+},{"b1db2a75daed58fb":"lgJ39"}],"fXl6u":[function(require,module,exports) {
 var _festesJs = require("../js/festes.js");
 var _categoriaJs = require("../js/categoria.js");
 var _presentacioJs = require("../js/presentacio.js");

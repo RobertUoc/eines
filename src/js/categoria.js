@@ -1,14 +1,14 @@
-import foto1 from '../img/guimera.jpg';
-import foto2 from '../img/aigues.jpg';
-import foto3 from '../img/lleida.jpg';
-import foto4 from '../img/boi.jpg';
-import foto5 from '../img/monastir.jpg';
+import foto1 from '../img/guimera.webp';
+import foto2 from '../img/aigues.webp';
+import foto3 from '../img/lleida.webp';
+import foto4 from '../img/boi.webp';
+import foto5 from '../img/monastir.webp';
 //
-import foto1_m from '../img/guimera_m.jpg';
-import foto2_m from '../img/aigues_m.jpg';
-import foto3_m from '../img/lleida_m.jpg';
-import foto4_m from '../img/boi_m.jpg';
-import foto5_m from '../img/monastir_m.jpg';
+import foto1_m from '../img/guimera_m.webp';
+import foto2_m from '../img/aigues_m.webp';
+import foto3_m from '../img/lleida_m.webp';
+import foto4_m from '../img/boi_m.webp';
+import foto5_m from '../img/monastir_m.webp'
 
 import { lesFestes } from '../js/festes.js';
 
@@ -31,7 +31,9 @@ let botons = [{
           text : "Una de les millors coses a fer a Lleida és passejar pels carrerons de Guimerà , un dels pobles més bonics a veure a Catalunya . Flanquejat pel riu Corb i situat en un vessant d'una muntanya, aquest poble medieval enamora per les seves cases de pedra amb detalls en portes i finestres, i els seus carrerons costeruts, alguns amb arcades, que et portaran fins a l'Església de Santa Maria i la torre del castell, des d'on tindràs unes vistes fantàstiques. Un cop acabis el recorregut pots tornar a baixar passant per la Plaça Major i alguns dels seus carrers més bonics, com el del Cacau i de la Cendra, fins arribar una altra vegada a la riba del Corb, on no pots deixar de reposar forces prenent un aperitiu al Bar Moretes o esmorzar les seves famoses arengades de la mama , amb pa amb tomàquet. Si t'animes no deixis de comentar-nos-ho al post, ens farà especial il·lusió saber-ho! A uns 2 quilòmetres de Guimerà hi ha les ruïnes del monestir de Vallsanta, que també mereixen una visita.",
           url : foto1,
           srcset : foto1_m, 
-          sizes : "(max-width: 1000px)"
+          sizes : "(max-width: 1000px)",
+          width : 800,
+          height : 534
           },
           {
           id : 'aigues',
@@ -40,7 +42,9 @@ let botons = [{
           text : "El Parc Nacional d´Aigüestortes i Estany de Sant Maurici , és una altra de les meravelles que veure a Lleida i el nostre racó favorit per gaudir de la natura. Aquest espai natural protegit, únic al sud d'Europa, us permet fer rutes de senderisme entre muntanyes de més de 3.000 metres d'alçada, llacs de tot tipus i colors, cascades, rius i una gran diversitat de fauna i flora. El parc disposa de dos accessos principals: el de Boí i el d'Espot, als quals pots arribar amb autobús o cotxe, aquesta última és l'opció més recomanable. Si entreu per Boí podreu observar els paisatges més característics del parc com són els prats i meandres, a més de diversos llacs com el de Llebreta, Llong, Travessani, el Negre o el Monges, i muntanyes com la de Comaloforno, de 3.033 metres d'altitud . Mentre que si entres per Espot podràs veure el famós Llac de Sant Maurici, els dos pics coneguts com Els Encantats , la cascada i el llac de Ratera, i la zona d'Amitges on pots trobar un refugi, un llac i dos pics a forma d'agulla. Tot i que és recomanable fer totes les rutes a peu, a la zona de Sant Maurici disposeu d'un servei de 4×4 que us portarà fins a la zona alta, per la qual cosa us estalviareu una part important de la pujada.",
           url : foto2,
           srcset : foto2_m, 
-          sizes : "(max-width: 1000px)"
+          sizes : "(max-width: 1000px)",
+          width : 800,
+          height : 534
           },
           {
           id : 'lleida',
@@ -51,7 +55,9 @@ let botons = [{
           srcset : foto3_m, 
           sizes : "(max-width: 1000px)",
           canvi : 'festes',
-          canvi_text : 'Les Festes'
+          canvi_text : 'Les Festes',
+          width : 800,
+          height : 534
           },
           {
           id : 'boi',
@@ -61,6 +67,8 @@ let botons = [{
           url : foto4,
           srcset : foto4_m, 
           sizes : "(max-width: 1000px)",
+          width : 800,
+          height : 534
           },
           {
           id : 'vallbona',
@@ -70,18 +78,22 @@ let botons = [{
           url : foto5,
           srcset : foto5_m, 
           sizes : "(max-width: 1000px)",
+          width : 800,
+          height : 534
           }
 
 ];
 let matriu = [];
 
-function lesCategories() {
+async function lesCategories() {
        // Amago el menu
+
        home.innerText = '';
        let h1 = document.createElement('h1');
        h1.classList.add('center');
        h1.innerText = 'Categoria';
    
+       let fragment = document.createDocumentFragment(); 
        let div = document.createElement('div'); 
        let p = document.createElement('p');
        p.innerText = "Aquesta llista dels millors llocs a veure a Lleida i província, ens ajudarà a conèixer aquesta regió plena de meravelles naturals i monuments històrics. Situada al nord-est d'Espanya, a l'interior de Catalunya, ofereix experiències fantàstiques en contacte amb la natura més autèntica i coneixent el seu passat medieval a petits pobles plens d'encant. Per arribar a Lleida disposes del tren d'alta velocitat (AVE) que té parada a la capital o pots volar a Barcelona, ​​a menys de dues hores amb cotxe. Aqui tens una llista plena de llocs a visitar a Lleida imprescindibles. Comencem!";
@@ -103,7 +115,8 @@ function lesCategories() {
            d.appendChild(but);
            butons.appendChild(d);             
        });
-   
+          
+       document.body.appendChild(fragment);
        div.appendChild(h1);
        div.appendChild(p);
        div.appendChild(butons);
@@ -123,8 +136,13 @@ function lesCategories() {
            let d2 = document.createElement('div');       
            d2.classList.add('center');
            let img = document.createElement('img');    
-           img.classList.add('foto');        
-           img.setAttribute('src', boto.url);
+           img.classList.add('foto');    
+           img.classList.add('lazy');    
+           img.setAttribute('alt', boto.titul);
+           img.setAttribute('width', boto.width);
+           img.setAttribute('height',  boto.height);
+           img.setAttribute('data-src', boto.url);
+           img.setAttribute('loading', 'lazy');  
            if (boto.srcset != undefined) {
                 img.setAttribute('srcset', `${boto.srcset} 991w, ${boto.url}` );     
                 img.setAttribute('sizes', boto.sizes);
@@ -147,7 +165,7 @@ function lesCategories() {
                d1.appendChild(d3);      
            }        
            div.appendChild(d1);
-       });    
+       });                  
        home.appendChild(div);
 }
 

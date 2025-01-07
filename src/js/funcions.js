@@ -1,4 +1,4 @@
-import lleida from '../img/portada.png';
+import lleida from '../img/portada.webp';
 
 const links = document.querySelectorAll('a');
 links.forEach(link => {
@@ -10,16 +10,22 @@ links.forEach(link => {
     });
 });
 
-function principal() {    
+async function principal() {    
     home.innerText = '';
 
     let div_ext = document.createElement('div');     
     let img = document.createElement('img');
     div_ext.classList.add('bg-container');    
+
     img.setAttribute('src', lleida);
     img.setAttribute('alt', 'llieda');    
+    img.setAttribute('rel', 'preload');    
+    img.setAttribute('as', 'image');  
+    img.setAttribute('width', '447px');  
+    img.setAttribute('height', 'auto');  
+    img.setAttribute('loading', 'lazy');  
     img.classList.add('fotografia');    
-    img.classList.add('clip-animation');    
+    img.classList.add('clip-animation');        
     div_ext.appendChild(img);
 
     let div = document.createElement('div'); 

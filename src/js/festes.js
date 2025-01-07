@@ -1,4 +1,4 @@
-import caragolillo from '../img/caragolillo.jpg';
+import caragolillo from '../img/caragolillo.webp';
 
 let multimedia = [
     {titol : 'Himne Caragolillo Brillo',
@@ -18,7 +18,8 @@ let multimedia = [
 let festes = document.getElementById('festes');
 let home = document.getElementById('main');
 
-function lesFestes() {
+async function lesFestes() {    
+
     home.innerText = '';
     let div = document.createElement('div');
     div.classList.add('container');
@@ -30,9 +31,14 @@ function lesFestes() {
     h2.innerText = 'Aplec del Caragol';
 
     let img = document.createElement('img');
-    img.setAttribute('src', caragolillo);    
     img.setAttribute('alt','Caragolillo');
-    img.classList.add('foto');
+    // img.classList.add('foto');
+    img.classList.add('lazy'); 
+    img.setAttribute('width', '1058');
+    img.setAttribute('height', '260');    
+    img.setAttribute('loading', 'lazy');  
+    img.setAttribute('src', caragolillo);    
+    
 
     let links = document.createElement('div');
     links.classList.add('center');
@@ -50,6 +56,8 @@ function lesFestes() {
         iframe.setAttribute('allow', 'web-share');
         iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
         iframe.setAttribute('allowfullscreen','allowfullscreen');
+        iframe.setAttribute('loading','lazy');
+        iframe.classList.add('lazy'); 
 
         d.appendChild(iframe);
         links.appendChild(h2);
@@ -74,6 +82,7 @@ function lesFestes() {
     div.appendChild(d);
 
     home.appendChild(div);
+    
 };
 
 export {lesFestes};

@@ -1,8 +1,8 @@
-import foto1 from '../img/guimera.jpg';
-import foto2 from '../img/lleida.jpg';
-import foto3 from '../img/boi.jpg';
-import foto4 from '../img/aigues.jpg';
-import foto5 from '../img/monastir.jpg';
+import foto1 from '../img/guimera.webp';
+import foto2 from '../img/lleida.webp';
+import foto3 from '../img/boi.webp';
+import foto4 from '../img/aigues.webp';
+import foto5 from '../img/monastir.webp';
 
 let fotos = [{
     id : 'foto1',
@@ -58,7 +58,7 @@ let articles = [{
 let presentacio = document.getElementById('presentacio');
 let home = document.getElementById('main')
 
-function lesPresentacio() {
+async function lesPresentacio() {
     // Amago el menu
     let rect = imagen.getBoundingClientRect();
     if (rect.top > 0) { menu.dispatchEvent(new MouseEvent('click')); }
@@ -163,6 +163,7 @@ function lesPresentacio() {
         img.setAttribute("href", foto.url);
         img.setAttribute('width','100');
         img.setAttribute('height','100');   
+        img.setAttribute('loading', 'lazy');  
         svg.appendChild(img);
 
         d.appendChild(svg);        
