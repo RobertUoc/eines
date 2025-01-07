@@ -22,7 +22,7 @@ async function principal() {
     img.setAttribute('rel', 'preload');    
     img.setAttribute('as', 'image');  
     img.setAttribute('width', '447px');  
-    img.setAttribute('height', '300px');  
+    img.setAttribute('height', '281px');  
     img.setAttribute('loading', 'lazy');  
     img.classList.add('fotografia');    
     img.classList.add('clip-animation');        
