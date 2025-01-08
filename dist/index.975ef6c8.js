@@ -1280,10 +1280,6 @@ module.exports = require("52d1c957ab1eea2").getBundleURL("bLxZJ") + "boi_m.ffb2b
 module.exports = require("b1db2a75daed58fb").getBundleURL("bLxZJ") + "monastir_m.adc63780.webp" + "?" + Date.now();
 
 },{"b1db2a75daed58fb":"lgJ39"}],"fXl6u":[function(require,module,exports) {
-// import { lesFestes } from '../js/festes.js';
-//import { lesCategories } from '../js/categoria.js';
-// import { lesPresentacio } from '../js/presentacio.js';
-// import { lesEnllacos } from '../js/enllacos.js';
 let categoria = document.getElementById("categoria_peu");
 let festes = document.getElementById("festes_peu");
 let presentacio = document.getElementById("presentacio_peu");
