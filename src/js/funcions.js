@@ -21,8 +21,8 @@ async function principal() {
     img.setAttribute('alt', 'llieda');    
     img.setAttribute('rel', 'preload');    
     img.setAttribute('as', 'image');  
-    img.setAttribute('width', '364px');  
-    img.setAttribute('height', '237px');  
+    img.setAttribute('width', '344px');  
+    img.setAttribute('height', '217px');  
     img.setAttribute('loading', 'lazy');  
     img.classList.add('fotografia');    
     img.classList.add('clip-animation');        
