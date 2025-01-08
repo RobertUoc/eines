@@ -1280,27 +1280,47 @@ module.exports = require("52d1c957ab1eea2").getBundleURL("bLxZJ") + "boi_m.ffb2b
 module.exports = require("b1db2a75daed58fb").getBundleURL("bLxZJ") + "monastir_m.adc63780.webp" + "?" + Date.now();
 
 },{"b1db2a75daed58fb":"lgJ39"}],"fXl6u":[function(require,module,exports) {
-var _festesJs = require("../js/festes.js");
-var _categoriaJs = require("../js/categoria.js");
-var _presentacioJs = require("../js/presentacio.js");
-var _enllacosJs = require("../js/enllacos.js");
+// import { lesFestes } from '../js/festes.js';
+//import { lesCategories } from '../js/categoria.js';
+// import { lesPresentacio } from '../js/presentacio.js';
+// import { lesEnllacos } from '../js/enllacos.js';
 let categoria = document.getElementById("categoria_peu");
 let festes = document.getElementById("festes_peu");
 let presentacio = document.getElementById("presentacio_peu");
 let enllacos = document.getElementById("enllacos_peu");
-categoria?.addEventListener("click", ()=>{
-    (0, _categoriaJs.lesCategories)();
+categoria?.addEventListener("click", async ()=>{
+    const { lesCategories } = await require("57ab2f73479bb11d");
+    lesCategories();
+    lesCategories();
 });
-festes?.addEventListener("click", ()=>{
-    (0, _festesJs.lesFestes)();
+festes?.addEventListener("click", async ()=>{
+    const { lesFestes } = await require("3c04c0596146300");
+    lesFestes();
+    lesFestes();
 });
-presentacio?.addEventListener("click", ()=>{
-    (0, _presentacioJs.lesPresentacio)();
+presentacio?.addEventListener("click", async ()=>{
+    const { lesPresentacio } = await require("dbb02540ede997a");
+    lesPresentacio();
+    lesPresentacio();
 });
-enllacos?.addEventListener("click", ()=>{
-    (0, _enllacosJs.lesEnllacos)();
+enllacos?.addEventListener("click", async ()=>{
+    const { lesEnllacos } = await require("285e458cfb616f0");
+    lesEnllacos();
+    lesEnllacos();
 });
 
-},{"../js/festes.js":"gpyYL","../js/categoria.js":"bmnj6","../js/presentacio.js":"i0UJj","../js/enllacos.js":"gQsUk"}]},["farZc","8lqZg"], "8lqZg", "parcelRequire2d1f")
+},{"57ab2f73479bb11d":"6kSVy","3c04c0596146300":"4MnJh","dbb02540ede997a":"Au3ea","285e458cfb616f0":"lHBxY"}],"6kSVy":[function(require,module,exports) {
+module.exports = Promise.resolve(module.bundle.root("bmnj6"));
+
+},{}],"4MnJh":[function(require,module,exports) {
+module.exports = Promise.resolve(module.bundle.root("gpyYL"));
+
+},{}],"Au3ea":[function(require,module,exports) {
+module.exports = Promise.resolve(module.bundle.root("i0UJj"));
+
+},{}],"lHBxY":[function(require,module,exports) {
+module.exports = Promise.resolve(module.bundle.root("gQsUk"));
+
+},{}]},["farZc","8lqZg"], "8lqZg", "parcelRequire2d1f")
 
 //# sourceMappingURL=index.975ef6c8.js.map
